@@ -707,7 +707,6 @@ blockquote.quote-large {
         const data = await res.json();
         document.getElementById("counter").textContent = data.count;
       } catch (err) {
-        document.getElementById("counter").textContent = "Error loading counter";
         console.error("Counter error:", err);
       }
     });
