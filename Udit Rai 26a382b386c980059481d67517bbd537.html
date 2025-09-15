@@ -1,0 +1,714 @@
+<html><head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Udit Rai</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 1vh 0% 1vh 5%;
+		max-width: 90%;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	background-color: 	#eeeeee;
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(115, 114, 110, 1);
+	fill: rgba(115, 114, 110, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(205, 60, 58, 1);
+	fill: rgba(205, 60, 58, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.highlight-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(115, 114, 110, 1);
+	fill: rgba(115, 114, 110, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(205, 60, 58, 1);
+	fill: rgba(205, 60, 58, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.block-color-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 99, 174, 0.172); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="26a382b3-86c9-8005-9481-d67517bbd537" class="page sans"><header><h1 class="page-title">Udit Rai</h1><p class="page-description"></p></header><div class="page-body"><div id="26a382b3-86c9-8198-b0a3-f2653e047266" class="column-list"><div id="26a382b3-86c9-8190-a378-c3683369aae9" style="width:25%" class="column"><figure id="26a382b3-86c9-818b-ae35-e9d5623dd237" class="image"><a href="me.jpeg"><img style="width:229.72222900390625px; border-radius: 50%;" src="me.jpeg"/></a></figure><h2 id="26a382b3-86c9-8132-bd28-e9826c65f527" class="block-color-default">Links</h2><hr id="26a382b3-86c9-81be-82da-faf2c97f5299"/><p id="26a382b3-86c9-812a-b9ca-c2dc826beff5" class=""><img alt="github" src="github-6980894_960_720.png" style="width:1em;height:1em"/> <strong><a href="https://github.com/udit-rai">Github</a></strong></p><p id="26a382b3-86c9-8139-829b-e6955555836b" class=""><img alt="linkedin" src="LinkedIn_logo_initials.png.webp" style="width:1em;height:1em"/> <strong><a href="https://www.linkedin.com/in/mr-uditrai/">LinkedIn</a></strong></p><p id="26b382b3-86c9-80ae-82b0-e39d8b6034d7" class=""><img alt="medium" src="Medium_logo_Monogram.svg.png" style="width:1em;height:1em"/> <strong><a href="https://medium.com/@udit.blogs">Medium</a></strong></p><h2 id="26b382b3-86c9-8019-9372-f0a9364f79dc" class="block-color-default">Skills</h2><hr id="26b382b3-86c9-80ab-8cf8-f32ffaaa90b6"/><p id="26b382b3-86c9-8028-b4bf-d3868a30cb39" class=""><img alt="js" src="javascript-logo-png-transparent-3265192539.png" style="width:1em;height:1em"/> <strong>Node.js</strong></p><p id="26b382b3-86c9-8048-be20-e1cdb663b3fb" class=""><img alt="sql" src="images_(4).png" style="width:1em;height:1em"/> <strong>RDBMS with SQL</strong></p><p id="26b382b3-86c9-8058-a256-c76ca7ef77e6" class=""><img alt="ms" src="Microsoft_logo.svg.png" style="width:1em;height:1em"/> <strong>Azure</strong></p><p id="26b382b3-86c9-8067-8bff-ee75a372bf5d" class=""><img alt="linux" src="images_(3).png" style="width:1em;height:1em"/> <strong>Linux</strong> </p><h2 id="26b382b3-86c9-806b-b38d-dd699fb91a7b" class="block-color-default">Certifications</h2><hr id="26b382b3-86c9-8097-973f-ce898b253493"/><p id="26b382b3-86c9-8065-a508-e26b0802cbf4" class=""><img alt="ms" src="Microsoft_logo.svg.png" style="width:1em;height:1em"/> <strong>AZ-900 </strong><br/><em>Azure Fundamentals</em></p><p id="26b382b3-86c9-80c3-9848-ef79eb6f663f" class=""><img alt="ms" src="Microsoft_logo.svg.png" style="width:1em;height:1em"/> <strong>AI-900 </strong><br/><em>Azure AI Fundamentals</em></p><p id="26b382b3-86c9-809f-8edd-d61fb843a60e" class=""><img alt="ms" src="Microsoft_logo.svg.png" style="width:1em;height:1em"/> <strong>SC-900<br/></strong><em>Azure Security Fundamentals </em></p><p id="26b382b3-86c9-80a9-85a6-c70cdae699e5" class="">
+</p><p id="26a382b3-86c9-81ec-95d5-e8dfe461b1b0" class="">
+</p></div><div id="26a382b3-86c9-81a3-b65c-e8bf76c056c4" style="width:75%" class="column"><figure class="block-color-default callout" style="white-space:pre-wrap;display:flex" id="26a382b3-86c9-81b8-923c-c2d6fa68545e"><div style="font-size:1.5em; display: inline;">
+	<img class="icon" src="./code-folder-stroke-rounded.svg" style="margin: 0; font-weight:bolder;"> Security-Experienced Azure Certified Full-Stack Developer and Tech Writer for <em>JavaScript in Plain English</em> on Medium </figure>
+	<h1 id="26a382b3-86c9-8182-bf85-db360927d05a" class="" style="margin-top: 0;">Internship History</h1><hr id="26a382b3-86c9-81a0-8548-d24fd91b40fe"/><div id="26a382b3-86c9-8162-9aa3-ee930de6eb93" class="column-list"><div id="26a382b3-86c9-81c7-9eb0-cf4dd5044346" style="width:12.5%" class="column"><figure id="26a382b3-86c9-8179-8f3d-c0b92f2a0aa0" class="image"><a href="icpl.jpeg"><img style="width:80.39352416992188px" src="icpl.jpeg"/></a></figure></div><div id="26a382b3-86c9-815c-8394-da0a8b6df948" style="width:87.5%" class="column"><p id="26a382b3-86c9-8153-b269-e8fa4496f933" class=""><strong>Software Development Internship, CyberLearning IT Solutions</strong></p><p id="26a382b3-86c9-81c0-b26d-e73f96eebc82" class=""><em><mark class="highlight-gray">May 2025 - Present</mark></em></p><p id="26b382b3-86c9-806c-b6ad-e3a52e80d11e" class="">Developed and prototyped new features for a championship management platform using .NET, Node.js, and Vanilla JavaScript, collaborating with stakeholders to align design with business requirements.</p></div></div><div id="26b382b3-86c9-8024-b1c6-c9504742e4b6" class="column-list"><div id="26b382b3-86c9-80b7-919e-e519a10eefb4" style="width:12.5%" class="column"><figure id="26b382b3-86c9-80ba-b53d-e22bf0404bee" class="image"><a href="icpl%201.jpeg"><img style="width:80.39352416992188px" src="icpl%201.jpeg"/></a></figure></div><div id="26b382b3-86c9-8070-8145-ffff6925bba2" style="width:87.5%" class="column"><p id="26b382b3-86c9-8004-b375-c4955974b862" class=""><strong>Cybersecurity Trainer, CyberLearning IT Solutions</strong></p><p id="26b382b3-86c9-800a-8c99-d6e52f0b5a3e" class=""><em><mark class="highlight-gray">Aug 2024 - April 2025</mark></em></p><p id="26b382b3-86c9-80df-9fbd-f48c84a4a074" class="">Analyzed threat intelligence reports to provide up-to date APT-resistant cybersecurity protocols to government and university personnel</p></div></div><div id="26a382b3-86c9-814c-8813-c9b040765bdf" class="column-list"><div id="26a382b3-86c9-81e9-bd2b-cd53de49caf9" style="width:12.5%" class="column"><figure id="26a382b3-86c9-81a8-93bd-dc2731e5a1b7" class="image"><a href="icpl%201.jpeg"><img style="width:80.39352416992188px" src="icpl%201.jpeg"/></a></figure></div><div id="26a382b3-86c9-811f-b0c6-fa08c4ff434e" style="width:87.5%" class="column"><p id="26a382b3-86c9-8144-9091-ef9165b77bf7" class=""><strong>Capstone Project, India CyberLearning Private Limited</strong></p><p id="26a382b3-86c9-8118-9b2a-cb19a7e55ae2" class=""><em><mark class="highlight-gray">May - July 2024</mark></em></p><p id="26a382b3-86c9-813e-9fef-e521f8aa802d" class="">Developed and maintained SQL databases with complex queries and stored procedures, assisted in project management, resolved data discrepancies, and ensured web applications and environments met Microsoft SSPA security compliances</p></div></div><h1 id="26a382b3-86c9-81ed-8dd2-c2c9211a9c67" class="">Education</h1><hr id="26a382b3-86c9-812f-9fc2-dd2b5587e8a6"/><div id="26a382b3-86c9-8119-b455-e0c40fc6b900" class="column-list"><div id="26a382b3-86c9-81b4-ad65-d2317517e918" style="width:12.5%" class="column"><figure id="26a382b3-86c9-8126-8e69-f72fc8ca7e0e" class="image"><a href="manipal.jpeg"><img style="width:80.39352416992188px" src="manipal.jpeg"/></a></figure></div><div id="26a382b3-86c9-8160-8fd2-d7f959a4d79f" style="width:87.5%" class="column"><p id="26a382b3-86c9-81fb-af19-d6b34f2be748" class=""><strong>Bachelors of Computer Applications</strong></p><p id="26a382b3-86c9-8142-81ef-f12ef8af252f" class=""><em><mark class="highlight-gray">December 2024</mark></em></p><p id="26b382b3-86c9-80ff-8875-c6c1aff6e361" class="">GPA: 3.2 </p><p id="26b382b3-86c9-80c2-b425-ce5fc263377f" class="">Activities and societies: Software Engineering, Programming in C, Database Management, Object Oriented Programming using C++, Data Structures and Algorithms using C++, Java Programming, System Programming, Python Programming, Mobile Application Development, Cloud Computing</p></div></div><h1 id="26b382b3-86c9-80e4-aaff-ddacf118e3e0" class="">Projects</h1><hr id="26b382b3-86c9-8017-a060-c347563f1eb7"/><div id="26b382b3-86c9-80ae-8745-c8887e496e80" class="column-list"><div id="26b382b3-86c9-8080-a47b-f628242430ea" style="width:12.5%" class="column"><figure id="26b382b3-86c9-80bb-867d-f97fb3d04b37" class="image"><a href="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?ixlib=rb-4.1.0&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb"><img style="width:72px" src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?ixlib=rb-4.1.0&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb"/></a></figure></div><div id="26b382b3-86c9-80da-8567-e9f188bc0a56" style="width:87.5%" class="column"><p id="26b382b3-86c9-8055-93f4-f9a0d3093211" class=""><strong>Library Management System (LMS)</strong> </p><p id="26b382b3-86c9-8011-8302-ce3d723a5863" class=""><strong><a href="https://github.com/udit-rai/library-management">link</a></strong></p><p id="26b382b3-86c9-80f6-b8ae-d0cbeb60ad7a" class="">The <strong>Library Management System (LMS)</strong> is a <strong>powerful yet user-friendly web application</strong> designed to streamline book reservations, member management, and search functionalities. Built using <strong>Node.js, Express, and SQL</strong>, this system ensures smooth interactions between library staff and users while maintaining security through authentication and authorization.<br/><br/></p><p id="26b382b3-86c9-80c5-9b9e-fc65c9d81ab5" class="">
+</p></div></div></div></div><p id="26a382b3-86c9-8177-bdde-dbbbbb4a329f" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body>
+
+<script>
+    // This runs when the page is loaded
+    window.addEventListener("DOMContentLoaded", async () => {
+      try {
+        const res = await fetch("/api/incrementCounter");
+        const data = await res.json();
+        document.getElementById("counter").textContent = data.count;
+      } catch (err) {
+        document.getElementById("counter").textContent = "Error loading counter";
+        console.error("Counter error:", err);
+      }
+    });
+
+</script>
+</html>
